@@ -445,7 +445,7 @@
     if(!WHATSAPP_NUMBER || WHATSAPP_NUMBER.replace(/\D/g,"") === "" || WHATSAPP_NUMBER === WA_PLACEHOLDER){
       alert("Olá! O número de WhatsApp ainda não foi configurado.\n\nPara ativar a aba de dúvidas, edite o arquivo HTML e substitua o valor de WHATSAPP_NUMBER (logo no início do código) pelo seu número com DDI + DDD, só dígitos. Ex: 5515999999999");
     } else {
-      var msg = encodeURIComponent("Olá! Tenho dúvidas sobre o curso preparatório para GCM Capão Bonito / QP de Soldados da PM.");
+      var msg = encodeURIComponent("Olá! Tenho dúvidas sobre o curso preparatório para GCM Capão Bonito.");
       window.open("https://wa.me/" + WHATSAPP_NUMBER.replace(/\D/g,"") + "?text=" + msg, "_blank");
     }
   }
